@@ -19,14 +19,11 @@ body {
   padding-bottom: 44px;
 }
 
-body>div {
-  border: 1px solid #ddd;
-  border-top: none;
-}
-
 @media (min-width: 650px) {
   body>div {
     width: 70%;
+    border: 1px solid #ddd;
+    border-top: none;
   }
 }
 
