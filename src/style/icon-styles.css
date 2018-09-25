@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "instagram-fonts-2";
+  src:url("fonts/instagram-fonts-2.eot");
+  src:url("fonts/instagram-fonts-2.eot?#iefix") format("embedded-opentype"),
+    url("fonts/instagram-fonts-2.woff") format("woff"),
+    url("fonts/instagram-fonts-2.ttf") format("truetype"),
+    url("fonts/instagram-fonts-2.svg#instagram-fonts-2") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "instagram-fonts-2" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "instagram-fonts-2" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  color: #333;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-camera:before {
+  font-size: 26px;
+  padding: 3px;
+  margin: auto;
+  content: "\61";
+}
+.icon-camera {
+  height: 26px;
+}
+.icon-user-add:before {
+  font-size: 27px;
+  padding: 3px;
+  content: "\63";
+}
+.icon-user-add {
+  height: 27px;
+}
+.icon-home:before {
+  font-size: 31px;
+  padding: 3px;
+  content: "\62";
+}
+.icon-home {
+  height: 31px;
+}
+.icon-search:before {
+  font-size: 27px;
+  padding: 3px;
+  content: "\64";
+}
+.icon-search {
+  height: 27px;
+}
+.icon-plus-square-o:before {
+  font-size: 31px;
+  padding: 3px;
+  content: "\65";
+}
+.icon-plus-square-o {
+  height: 31px;
+}
+.icon-heart-o {
+  padding: 2px;
+}
+.icon-heart-o:before {
+  font-size: 27px;
+  content: "\6e";
+}
+.icon-heart {
+  padding: 2px;
+}
+.icon-heart:before {
+  font-size: 27px;
+  color: #f44242;
+  content: "\66";
+}
+.icon-user {
+  height: 28px;
+}
+.icon-user:before {
+  font-size: 28px;
+  padding: 3px;
+  content: "\67";
+}
+.icon-dot-3:before {
+  font-size: 20px;
+  content: "\68";
+}
+.icon-grid,
+.icon-grid-active {
+  height: 27px;
+}
+.icon-grid:before,
+.icon-grid-active:before {
+  font-size: 27px;
+  color: #aaa;
+  padding: 3px;
+  content: "\69";
+}
+.icon-grid-active:before {
+  color: #2987e9;
+}
+.icon-bars {
+  height: 27px;
+}
+.icon-bars:before {
+  font-size: 27px;
+  padding: 3px;
+  content: "\6a";
+}
+.icon-comment-o {
+  height: 28px;
+  padding-left: 3px;
+}
+.icon-comment-o:before {
+  font-size: 28px;
+  content: "\6b";
+}
+.icon-paper-plane-o {
+  padding: 3px;
+}
+.icon-paper-plane-o:before {
+  font-size: 25px;
+  content: "\6c";
+}
+.icon-bookmark-o {
+  padding: 2px;
+  height: 27px;
+}
+.icon-bookmark-o:before {
+  font-size: 27px;
+  content: "\6d";
+}
+.icon-bookmark {
+  padding: 2px;
+  height: 27px;
+}
+.icon-bookmark:before {
+  font-size: 27px;
+  content: "\6f";
+}

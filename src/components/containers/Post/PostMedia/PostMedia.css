@@ -1,0 +1,27 @@
+.postMedia {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.postMedia img {
+  width: 100%;
+  height: 100%;
+}
+
+.heartNotVisible {
+  visibility: hidden;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: calc(50% - 17px);
+  left: calc(50% - 17px);
+}
+
+.iconHeart {
+  visibility: visible;
+  color: white;
+  transition: all .5s;
+  transform: scale(6);
+  transition-timing-function: cubic-bezier(.52,1.68,.33,.76);
+}

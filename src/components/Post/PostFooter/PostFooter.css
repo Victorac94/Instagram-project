@@ -1,0 +1,53 @@
+.postFooter {
+  width: 100%;
+  padding: 7px 10px;
+  padding-bottom: 20px;
+}
+
+.postFooter a {
+  text-decoration: none;
+  color: black;
+}
+
+.postFooter__Header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.postFooter__Header span {
+  padding-right: 7px;
+}
+
+.postFooter__Header span:last-child {
+  margin-left: auto;
+  padding-right: 0;
+}
+
+.likes,
+.accountComment {
+  font-size: 14px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.accountName {
+  font-weight: bold;
+}
+
+.accountComment {
+  margin-top: 12px;
+  line-height: 18px;
+}
+
+.uploaded {
+  font-size: 12px;
+  font-weight: 300;
+  color: #aaa;
+  padding-left: 3px;
+}

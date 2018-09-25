@@ -1,0 +1,112 @@
+.profileBody {
+  width: 100%;
+}
+
+.profileBody .stats,
+.profileBody .viewModes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.profileBody .viewModes {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0;
+  border: none;
+}
+
+.profileBody .viewModes div:first-child {
+  border-right: 1px solid #ccc;
+}
+
+.profileBody .stats .stat,
+.profileBody .viewModes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileBody .stat span:first-child {
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 1px;
+}
+
+.profileBody .stat span:last-child {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.profileBody .iconViewModeList span:nth-child(1),
+.profileBody .iconViewModeList span:nth-child(2),
+.profileBody .iconViewModeList span:nth-child(3),
+.profileBody .iconViewModeListActive span:nth-child(1),
+.profileBody .iconViewModeListActive span:nth-child(2),
+.profileBody .iconViewModeListActive span:nth-child(3) {
+  display: inline-block;
+  height: 1px;
+  width: 20px;
+  margin: 1px 0;
+  border: 1px solid #aaa;
+}
+
+.profileBody .iconViewModeListActive span:nth-child(1),
+.profileBody .iconViewModeListActive span:nth-child(2),
+.profileBody .iconViewModeListActive span:nth-child(3) {
+  border-color: #2987e9;
+}
+
+.profileBody .iconViewModeList span:nth-child(2),
+.profileBody .iconViewModeListActive span:nth-child(2) {
+  height: 19px;
+  border-width: 2px;
+}
+
+.profileBody .gridModeView {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.profileBody .gridModeView div {
+  height: 32.4vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.profileBody .gridModeView img {
+  position: absolute;
+  height: 100%;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+}
+
+.profileBody .listModeView {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.profileBody .listModeView div,
+.profileBody .listModeView div img {
+  width: 100%;
+}
+
+@media (min-width: 650px) {
+  .profileBody .gridModeView div {
+    height: calc(32.4vw * 0.7);
+  }
+}
+
+@media (min-width: 1000px) {
+  .profileBody .gridModeView div {
+    height: calc(32.4vw * 0.5);
+  }
+}

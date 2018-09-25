@@ -1,0 +1,82 @@
+.accountImgDiv {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
+  grid-area: accountImgDiv;
+}
+
+.accountImgDiv img {
+  position: absolute;
+  height: 100%;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+}
+
+.accountName {
+  font-size: 21px;
+  margin: auto 0;
+  margin-right: 15px;
+  grid-area: accountName;
+}
+
+.accountOptions {
+  margin: auto 0;
+  grid-area: accountOptions;
+}
+
+.accountOptions:hover {
+  cursor: pointer;
+}
+
+.followButton {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  max-width: 200px;
+  grid-area: followButton;
+}
+
+.followButton:hover {
+  cursor: pointer;
+}
+
+.bio {
+  font-size: 15px;
+  grid-area: bio;
+}
+
+.profileHead {
+  padding: 30px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    'accountImgDiv accountName accountOptions'
+    'accountImgDiv followButton followButton'
+    'bio           bio          bio'
+}
+
+@media (min-width: 650px) {
+  .accountImgDiv {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+  }
+
+  .followButton {
+    margin-right: 10px;
+  }
+
+  .profileHead {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'accountImgDiv accountName followButton accountOptions'
+      'accountImgDiv bio         bio          bio'
+  }
+}

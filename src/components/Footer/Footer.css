@@ -1,0 +1,30 @@
+.Footer div {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 44px;
+  background-color: white;
+  padding: 7px 10px;
+  border-top: 1px solid #ddd;
+}
+
+@media (min-width: 650px) {
+  .Footer div {
+    width: 70%;
+    left: 15%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Footer div {
+    width: 50%;
+    left: 25%;
+  }
+}

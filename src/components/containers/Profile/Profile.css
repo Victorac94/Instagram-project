@@ -1,0 +1,17 @@
+.Profile {
+  width: 100%;
+  min-height: calc(100vh - 88px);
+  background-color: #fafafa;
+}
+
+@media (min-width: 650px) {
+  .Profile {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1000px){
+  .Profile {
+    width: 50%;
+  }
+}

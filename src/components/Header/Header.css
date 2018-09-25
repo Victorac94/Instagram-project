@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.Header div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 44px;
+  background-color: white;
+  padding: 7px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.instagramTitle {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
+
+.viewTitle {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+}
+
+@media (min-width: 650px) {
+  .Header div {
+    width: 70%;
+    left: 15%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Header div {
+    width: 50%;
+    left: 25%;
+  }
+}
